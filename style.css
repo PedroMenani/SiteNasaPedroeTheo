@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Alterações feitas aqui para alinhar os elementos em linha */
+.cabecalho{
+    background-image: url(images/fundo_cabecalho.jpg);
+    width: 100vw;
+    height: 20%;
+    display: flex;                  
+    flex-direction: row;            
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 0 40px;                
+}
+
+
+
+.meio{
+    display: block;
+    justify-content: center;
+    background-color: #000000;
+
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 20%;
+}
+p{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-weight: bold; 
+    color: #000000;
+}
+
+
+.logonasa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.alingcabecalho{
+    color: #ffff;
+    font-weight: bold; 
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.nome_nasa{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 80px;
+    font-weight:bold;
+    color: #ffff;
+}
+.espaco{
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    width: 80vw;
+    height: 40vh;
+    z-index: -1;
+    align-self: center;
+}
+.index{
+    z-index: 10;
+    position: relative;
+    white-space: normal;
+
+}
+
+.imgctext{
+    display: block;
+    width: 100%;
+    align-self: center;
+}
+
+
+.quadrado_noticia{
+  display: block;
+  width: 100%;            
+  font-size: 0;           
+  text-align: left;        
+  box-sizing: border-box;
+  padding: 20px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+}
+
+
+.card_noticia {
+  display: inline-block; 
+  vertical-align: top;   
+  font-size: 14px;       
+  width: 23%;            
+  min-width: 250px;      
+  margin-right: 2%;     
+  margin-bottom: 20px;    
+  
+  box-sizing: border-box; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+
+.card_noticia img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.conteudo_noticia{
+    padding: 15px;
+    white-space: normal;
+}
+.card_noticia p {
+    display: block;
+    font-weight: normal; 
+    color: #333333;
+    text-align: left;
+    margin-bottom: 10px;
+    white-space: normal; }
