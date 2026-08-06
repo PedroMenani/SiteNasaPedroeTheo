@@ -12,11 +12,11 @@ body {
 }
 
 
-/* Alterações feitas aqui para alinhar os elementos em linha */
+
 .cabecalho{
     background-image: url(images/fundo_cabecalho.jpg);
     width: 100vw;
-    height: 120;
+    height: 100;
     display: flex;                  
     flex-direction: row;            
     justify-content: space-between; 
@@ -32,7 +32,15 @@ body {
     background-color: #000000;
 
 }
+.imagesespaco{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000000;
+    align-items: center;
+    margin-bottom: 10px;
 
+}
 p{
     text-align: justify;
     display: block;
@@ -245,4 +253,388 @@ p{
     max-height: 450px;   
     object-fit: cover; 
     display: block;
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+*{
+    margin: 0;}
+
+
+.menu{
+    background: #1d1d1d;
+}
+
+.menu nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a{
+    color: #fff;   
+}
+
+
+
+.logo img{
+    width: 80px;
+    height: auto;
+}
+
+
+
+
+.hero{
+    width: 100%;
+    height: 500px;
+    position: relative;
+
+}
+
+
+
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.35);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título */
+.overlay h1{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* Conteúdo */
+.conteudo{
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.conteudo p{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.menu{
+    background:#1b1b1b;
+    padding:18px;
+}
+
+.menu nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#1e90ff;
+}
+
+.logo img{
+    width:80px;
+}
+
+
+
+.hero{
+    position:relative;
+    height:420px;
+    overflow:hidden;
+}
+
+.hero-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:white;
+    font-size:70px;
+}
+
+
+
+.contato{
+    width:900px;
+    margin:60px auto;
+    background:white;
+    padding:50px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+.contato h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#003366;
+    font-size:38px;
+}
+
+.contato p{
+    text-align:center;
+    margin-bottom:40px;
+    line-height:1.8;
+    color:#555;
+}
+
+.campo{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:25px;
+}
+
+.campo label{
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.campo input,
+.campo textarea{
+    padding:15px;
+    border:1px solid #bbb;
+    border-radius:8px;
+    font-size:17px;
+}
+
+.campo input:focus,
+.campo textarea:focus{
+    outline:none;
+    border:2px solid #0057d9;
+}
+
+button{
+    width:100%;
+    padding:18px;
+    background:#0057d9;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1976ff;
+}
+
+footer{
+    background:#1b1b1b;
+    color:rgb(255, 255, 255);
+    text-align:center;
+    padding:40px;
+    margin-top:60px;
+}
+
+footer h3{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+.copy{
+    margin-top:30px;
+    color:#999;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.menu{
+    background:#1b1b1b;
+    padding:18px;
+}
+
+.menu nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#1e90ff;
+}
+
+.logo img{
+    width:80px;
+}
+
+
+
+.hero{
+    position:relative;
+    height:420px;
+    overflow:hidden;
+}
+
+.hero-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:white;
+    font-size:65px;
+}
+
+
+
+.sobre{
+    max-width:1100px;
+    margin:60px auto;
+    background:white;
+    padding:50px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+
+.textoinicial{
+    color: black;
+}
+.sobre h2{
+    text-align:center;
+    color:#003366;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.sobre h3{
+    color:#0057d9;
+    margin:35px 0 15px;
+    font-size:28px;
+}
+
+.sobre p{
+    text-align:justify;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.sobre ul{
+    margin-left:30px;
+    line-height:2;
+    font-size:18px;
+}
+
+
+.cards{
+    display:flex;
+    gap:25px;
+    margin-top:20px;
+}
+
+.card{
+    flex:1;
+    background:#003366;
+    color:white;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+
+
+
+.card h4{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.card p{
+    color:white;
+    text-align:left;
+}
+
+
+
+footer{
+    background:#1b1b1b;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:60px;
+}
+
+footer h3{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+.copy{
+    margin-top:30px;
+    color:#999;
 }
