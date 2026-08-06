@@ -3,16 +3,20 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden; 
+    background-color: #000000;
 }
+
 
 /* Alterações feitas aqui para alinhar os elementos em linha */
 .cabecalho{
     background-image: url(images/fundo_cabecalho.jpg);
     width: 100vw;
-    height: 20%;
+    height: 120;
     display: flex;                  
     flex-direction: row;            
     justify-content: space-between; 
@@ -28,20 +32,14 @@ body{
     background-color: #000000;
 
 }
-.rodape{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    background-color: rgb(0, 0, 0);
-    width: 100vw;
-    height: 20%;
-}
+
 p{
-    display: flex;
+    text-align: justify;
+    display: block;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     font-weight: bold; 
-    color: #000000;
+    color: #ffff;
 }
 
 
@@ -58,6 +56,7 @@ p{
     font-size: 25px;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .nome_nasa{
@@ -91,28 +90,22 @@ p{
 }
 
 
-.quadrado_noticia{
-  display: block;
+.quadrado_noticia {
+  display: flex;             
+  justify-content: flex-start; 
+  gap: 2%;                  
   width: 100%;            
-  font-size: 0;           
-  text-align: left;        
   box-sizing: border-box;
   padding: 20px;
-  white-space: nowrap;
-  overflow-x: auto;
+  overflow-x: auto;         
   overflow-y: hidden;
-
 }
 
-
 .card_noticia {
-  display: inline-block; 
-  vertical-align: top;   
-  font-size: 14px;       
-  width: 23%;            
-  min-width: 250px;      
-  margin-right: 2%;     
-  margin-bottom: 20px;    
+  display: flex;             
+  flex-direction: column;    
+  flex: 1;              
+  min-width: 250px;        
   
   box-sizing: border-box; 
   border: 1px solid #ccc;
@@ -121,16 +114,16 @@ p{
   background: #fff;
 }
 
-
 .card_noticia img {
   width: 100%;
-  height: auto;
+  height: 150px ;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
 }
 
 .conteudo_noticia{
+    text-align: justify;
     padding: 15px;
     white-space: normal;
 }
@@ -141,3 +134,115 @@ p{
     text-align: left;
     margin-bottom: 10px;
     white-space: normal; }
+
+.noticiaprincipal{
+    display: flex;          
+    width: 100vw;
+    height: 40vh;
+    margin-top: 100px;      
+    position: relative;    
+    z-index: 5;
+}
+
+.titulonoticia{
+
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+}
+
+
+
+.container_nebulosa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;       
+    width: 90vw;
+    margin: 0px auto;         
+    gap: 5%;                  
+    box-sizing: border-box;
+}
+
+
+.coluna_texto_nebulosa {
+    flex: 1;                  
+}
+
+.container_nebulosa .titulonoticia {
+    color: #ffffff;            
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+    background-color: transparent; 
+}
+
+
+.coluna_imagem_nebulosa {
+    flex: 1;                   
+}
+
+.textonebulosa{
+    color: #ccc;
+    font-size: medium;
+    font-weight: bold;
+    line-height: 25px;
+}
+.coluna_imagem_nebulosa img.noticiaprincipal {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;         
+    display: block;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 20%;
+}
+
+.rodapetexto{
+    color: #ccc;
+    text-align: justify;
+    width: 50%;
+}
+.rodapecoluna{
+    display: flex;
+    flex-direction: row;
+}
+
+.espacoitems{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.logoformat{
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    height: 60px;
+}
+.textojustificado{
+    color: #ccc;
+    text-align: justify;
+    width: 75%;
+    line-height: 25px;
+}
+.colunaformat{
+    width: 33%;
+
+}
+
+.imagemmeio{
+    width: 50%;
+}
+#bg-video {
+    width: 100%;         
+    height: auto;        
+    max-height: 450px;   
+    object-fit: cover; 
+    display: block;
+}
